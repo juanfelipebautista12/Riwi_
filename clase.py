@@ -45,4 +45,4 @@ while validacion.lower() == "si":
 
     validacion= input("quieres ingresar otro producto?(si/no): ")
 
-print("\n❤️ gracias por preferir nuestro programa de inventario ❤️")
+print("❤️ gracias por preferir nuestro programa de inventario ❤️")
