@@ -1,4 +1,4 @@
-print("Bienvenido al inventario del supermercado la madera")
+print("🔥 Bienvenido al inventario del supermercado la madera 🔥")
 
 validacion= input("Quieres ingresar informacion a tu inventario?(si/no): ")
 
@@ -9,7 +9,7 @@ while validacion.lower() == "si":
     while True:
         nombre= input("ingrese el nombre del producto a registrar: ")
         if nombre.isnumeric() or nombre== "" :
-            print("ingresa un nombre valido por favor")
+            print("❌ ingresa un nombre valido por favor ❌")
 
         else:
             break 
@@ -23,20 +23,20 @@ while validacion.lower() == "si":
             else:
                 break
         except ValueError:
-            print("ingrese un valor valido por favor")
+            print("❌ ingrese un valor valido por favor ❌")
 
     #validacion de cantidad de unidades:
     while True:
         try:
             cantidad= int(input("ingresa la cantidad de unidades: "))
             if cantidad <= 0:
-                print("ingresa una cantidad valida por favor")
+                print("❌ ingresa una cantidad valida por favor ❌")
             else:
                 break
         except ValueError:
-            print("ingresa un numero valido para la cantidad")
+            print("❌ ingresa un numero valido para la cantidad ❌")
 
-    print("\n✅producto registrado correctamente✅")
+    print("\n✅ producto registrado correctamente ✅")
     print(f"registraste: {nombre}")
     print(f"precio/unidad: ${precio:.3f}")
     print(f"cantidad: {cantidad}")
@@ -45,16 +45,4 @@ while validacion.lower() == "si":
 
     validacion= input("quieres ingresar otro producto?(si/no): ")
 
-print("gracias por preferir nuestro programa de inventario")
-
-
-
-
-
-
-
-
-
-
-
-
+print("\n❤️ gracias por preferir nuestro programa de inventario ❤️")
